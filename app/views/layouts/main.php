@@ -63,10 +63,10 @@ $goodsCount = count(Shopcart::goods());
 <footer>
     <div class="container footer-content">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
                 Подписаться на рассылку
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <?php if(Yii::$app->request->get(Subscribe::SENT_VAR)) : ?>
                     Вы успешно подписаны
                 <?php else : ?>
