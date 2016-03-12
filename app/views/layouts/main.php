@@ -64,17 +64,17 @@ $goodsCount = count(Shopcart::goods());
     <div class="container footer-content">
         <div class="row">
             <div class="col-md-2">
-                Subscribe to newsletters
+                Подписаться на рассылку
             </div>
             <div class="col-md-6">
                 <?php if(Yii::$app->request->get(Subscribe::SENT_VAR)) : ?>
-                    You have successfully subscribed
+                    Вы успешно подписаны
                 <?php else : ?>
                     <?= Subscribe::form() ?>
                 <?php endif; ?>
             </div>
             <div class="col-md-4 text-right">
-                ©2015 noumo
+                ©<?= date('Y') ?> Клуб Единоборств "Вольный"
             </div>
         </div>
     </div>
