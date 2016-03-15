@@ -58,6 +58,17 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'app/error' => 'error.php',
+                    ],
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];

@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $page->model->title;
         <?php if(Yii::$app->request->get(Guestbook::SENT_VAR)) : ?>
             <h4 class="text-success"><i class="glyphicon glyphicon-ok"></i> Message successfully added</h4>
         <?php else : ?>
-            <h4>Leave message</h4>
+            <h4><?= Yii::t('appMain', 'guestbook_leave_message'); ?></h4>
             <div class="well well-sm">
                 <?= Guestbook::form() ?>
             </div>

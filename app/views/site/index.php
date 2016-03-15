@@ -49,7 +49,7 @@ $this->title = $page->seo('title', $page->model->title);
 
 
 <div class="text-center">
-    <h2>Интересные статьи</h2>
+    <h2><?= Yii::t('appMain', 'menu_Articles') ?></h2>
     <br/>
     <div class="row text-left">
         <?php $article = Article::last(1, ['category_id' => 1]); ?>
