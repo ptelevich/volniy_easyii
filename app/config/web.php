@@ -69,6 +69,12 @@ $config = [
                 ],
             ],
         ],
+        'user' => [
+            'class' => 'app\components\User',
+            'identityClass' => 'app\models\Admin',
+            'enableAutoLogin' => true,
+            //'authTimeout' => 86400,
+        ],
     ],
     'params' => $params,
 ];

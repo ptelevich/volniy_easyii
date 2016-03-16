@@ -4,7 +4,7 @@ use yii\easyii\modules\carousel\api\Carousel;
 use yii\easyii\modules\gallery\api\Gallery;
 use yii\easyii\modules\guestbook\api\Guestbook;
 use yii\easyii\modules\news\api\News;
-use yii\easyii\modules\page\api\Page;
+use app\modules\page\api\Page;
 use yii\easyii\modules\text\api\Text;
 use yii\helpers\Html;
 
