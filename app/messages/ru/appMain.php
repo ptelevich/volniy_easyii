@@ -15,4 +15,8 @@ return [
     'basket_empty' => 'Пусто',
 
     'guestbook_leave_message' => 'Оставить сообщение',
+
+    /** main page block's names */
+    'main_news_club' => 'Новости клуба',
+    'main_photo_club' => 'Фото клуба',
 ];
