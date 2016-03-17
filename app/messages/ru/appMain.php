@@ -19,4 +19,9 @@ return [
     /** main page block's names */
     'main_news_club' => 'Новости клуба',
     'main_photo_club' => 'Фото клуба',
+
+    /** shop page index */
+    'shop_index_Download price list' => 'Загрузить прайс лист',
+    'shop_index_Search' => 'Поиск',
+    'shop_index_Last items' => 'Последние товары',
 ];

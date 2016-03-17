@@ -27,7 +27,9 @@ function renderNode($node){
     <div class="col-md-8">
         <h1>
             <?= $page->seo('h1', $page->title) ?>
-            <a class="btn btn-success" href="<?= File::get('price-list')->file ?>"><i class="glyphicon glyphicon-save"></i> Download price list</a>
+            <a class="btn btn-success" href="<?= File::get('price-list')->file ?>"><i class="glyphicon glyphicon-save"></i>
+                <?= Yii::t('appMain', 'shop_index_Download price list')?>
+            </a>
         </h1>
         <br/>
         <ul>
@@ -37,7 +39,7 @@ function renderNode($node){
     <div class="col-md-4">
         <?= $this->render('_search_form', ['text' => '']) ?>
 
-        <h4>Last items</h4>
+        <h4><?= Yii::t('appMain', 'shop_index_Last items')?></h4>
         <?php foreach(Catalog::last(3) as $item) : ?>
             <p>
                 <?= Html::img($item->thumb(30)) ?>
