@@ -84,7 +84,7 @@ $this->title = $page->seo('title', $page->model->title);
 <div class="text-center">
     <h2><?= Yii::t('appMain', 'menu_Guestbook') ?></h2>
     <br/>
-    <div class="row text-left" style="margin-left: 25px;">
+    <div class="row text-left" style="margin-left: 10px;">
         <?php foreach(Guestbook::last(2) as $post) : ?>
             <div class="col-md-5">
                 <b><?= $post->name ?></b>
