@@ -3,12 +3,15 @@
 namespace app\controllers;
 
 use yii\easyii\modules\article\api\Article;
+use Yii;
 
 class ArticlesController extends \yii\web\Controller
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->render('index', [
+            'items' => Article::items()
+        ]);
     }
 
     public function actionCat($slug, $tag = null)
