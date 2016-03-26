@@ -14,7 +14,7 @@ class ShopController extends \yii\web\Controller
 {
     public function beforeAction()
     {
-        throw new BadRequestHttpException('Данная страница не доступна');
+        throw new BadRequestHttpException(Yii::t('appMain', 'Current page not available'));
     }
 
     public function actionIndex()

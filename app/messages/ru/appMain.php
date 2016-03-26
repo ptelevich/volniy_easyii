@@ -5,8 +5,8 @@ return [
     /** menu names */
     'menu_Home' => 'Главная',
     'menu_Shop' => 'Магазин',
-    'menu_News' => 'Новости',
-    'menu_Articles' => 'ММА',
+    'menu_News' => 'Новости клуба',
+    'menu_Articles' => 'Новости ММА',
     'menu_Gallery' => 'Галерея',
     'menu_Guestbook' => 'Отзывы',
     'menu_FAQ' => 'ЧаВо',
@@ -24,4 +24,6 @@ return [
     'shop_index_Download price list' => 'Загрузить прайс лист',
     'shop_index_Search' => 'Поиск',
     'shop_index_Last items' => 'Последние товары',
+
+    'Current page not available' => 'Данная страница не доступна',
 ];
