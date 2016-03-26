@@ -27,7 +27,7 @@ $goodsCount = count(Shopcart::goods());
                         'options' => ['class' => 'nav navbar-nav'],
                         'items' => [
                             ['label' => Yii::t('appMain', 'menu_Home'), 'url' => ['site/index']],
-                            ['label' => Yii::t('appMain', 'menu_Shop'), 'url' => ['shop/index']],
+                            ['label' => Yii::t('appMain', 'menu_Shop'), 'url' => ['shop/index'], 'visible' => false],
                             ['label' => Yii::t('appMain', 'menu_News'), 'url' => ['news/index']],
                             ['label' => Yii::t('appMain', 'menu_Articles'), 'url' => ['articles/index']],
                             ['label' => Yii::t('appMain', 'menu_Gallery'), 'url' => ['gallery/index']],

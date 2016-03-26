@@ -4,11 +4,19 @@ namespace app\controllers;
 
 use app\models\GadgetsFilterForm;
 use Yii;
+use yii\base\ErrorException;
+use yii\base\Exception;
 use yii\easyii\modules\catalog\api\Catalog;
+use yii\web\BadRequestHttpException;
 use yii\web\NotFoundHttpException;
 
 class ShopController extends \yii\web\Controller
 {
+    public function beforeAction()
+    {
+        throw new BadRequestHttpException('Данная страница не доступна');
+    }
+
     public function actionIndex()
     {
         return $this->render('index');
