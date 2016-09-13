@@ -75,6 +75,17 @@ $config = [
             'enableAutoLogin' => true,
             //'authTimeout' => 86400,
         ],
+        'authClientCollection' => [
+            'class' => 'yii\authclient\Collection',
+            'clients' => [
+                'vkontakte' => [
+                    'class' => 'yii\authclient\clients\VKontakte',
+                    'clientId' => '5627536',
+                    'clientSecret' => 'V9NlXfPE7bf7fxLlW8Oc',
+                    'scope' => 'friends,photos,audio,pages,wall,groups,email,stats,ads,offline,notifications', //,messages,nohttps
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
