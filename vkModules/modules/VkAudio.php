@@ -40,9 +40,17 @@ class VkAudio extends Auth
             'audio.get',
             'GET',
             [
-                'owner_id' => $this->getCurrentUser('user_id')
+                //'owner_id' => $this->getCurrentUser('user_id'),
+                'owner_id' => '9154290',
+                'count' => 5,
+                'offset' => 0,
+                'v' => '5.57',
+                'no_search' => 1,
             ]
         );
+
+        echo '<pre>';
+        print_r($response); exit;
 
         echo $this->renderView('myAudio', compact('response'));
     }

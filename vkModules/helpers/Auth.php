@@ -32,11 +32,14 @@ class Auth
         $this->vkObject->clientId = $this->clientId;
         $this->vkObject->clientSecret = $this->clientSecret;
         $this->vkObject->scope = $this->scope;
-        $this->vkObject->version = '5.57';
 
         if ($this->vkObject) {
 
             //$this->vkObject->setAccessToken(null); exit;
+            //$this->vkObject->setAccessToken((new OAuthToken)->setToken('ed0a039e6ea0aac9e3ef62289e2470c34d9f6cf303b784a5fde5061a3d3b433dd7bdb8cbbb4752ce71f3c'));
+            $auth = new OAuthToken();
+            $auth->setToken('2dd2778883ac834f1972c7f80f3576ebcbf1d5f69521fec05158c62a9d083535273f5f6b4cdcd95960fe7');
+            $this->vkObject->setAccessToken($auth);
             $accessToken = $this->vkObject->getAccessToken();
             $requestCode = Yii::$app->request->get('code', null);
             if (!$accessToken || $requestCode) {
@@ -59,6 +62,8 @@ class Auth
                 }
 
                 $buildUrl = $this->vkObject->buildAuthUrl();
+
+                var_dump($buildUrl); exit;
 
                 header('Location: ' . $buildUrl);
                 exit;
