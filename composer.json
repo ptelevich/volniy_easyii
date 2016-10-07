@@ -42,5 +42,10 @@
             "uploads",
             "runtime"
         ]
+    },
+    "autoload" : {
+        "classmap": [
+            "vkModules/"
+        ]
     }
 }

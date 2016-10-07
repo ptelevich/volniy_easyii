@@ -1,6 +1,7 @@
 <?php
 
 $params = require(__DIR__ . '/params.php');
+$own_params = require(__DIR__ . '/own_params.php');
 
 $basePath =  dirname(__DIR__);
 $webroot = dirname($basePath);
@@ -86,6 +87,16 @@ $config = [
                 ],
             ],
         ],
+        'vkModules' => [
+            'class' => 'fedoskin\vkModules\InitModules',
+            'modules' => [
+                'VkAudio'
+            ],
+            'config' => [
+                'clientId' => $own_params['vkClientId'],
+                'clientSecret' => $own_params['vkClientSecret'],
+            ]
+        ]
     ],
     'params' => $params,
 ];

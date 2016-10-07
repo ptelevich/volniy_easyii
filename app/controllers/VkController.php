@@ -3,11 +3,18 @@
 namespace app\controllers;
 
 use app\components\VkHelper;
+use fedoskin\vkModules\Modules;
 use yii\easyii\components\Controller;
 use Yii;
 
 class VkController extends Controller
 {
+    public function actionAudio()
+    {
+        $audioModuleVk = Yii::$app->vkModules->getModule('VkAudio');
+        //var_dump($audioModuleVk->getMyAudio());
+    }
+
     public function actionAudioMy()
     {
         $vkHelper = new VkHelper();

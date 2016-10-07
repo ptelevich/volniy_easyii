@@ -1,5 +1,6 @@
 .idea
 /app/config/db.php
+/app/config/own_params.php
 
 # composer vendor dir
 /vendor
